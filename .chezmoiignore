@@ -3,4 +3,5 @@ brew-dump.sh
 Brewfile
 Brewfile.lock.json
 Makefile
+UNLICENSE
 README.md
