@@ -1,0 +1,5 @@
+.pre-commit-config.yaml
+brew-dump.sh
+Brewfile
+Brewfile.lock.json
+README.md
