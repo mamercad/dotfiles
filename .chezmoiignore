@@ -2,4 +2,5 @@
 brew-dump.sh
 Brewfile
 Brewfile.lock.json
+Makefile
 README.md
