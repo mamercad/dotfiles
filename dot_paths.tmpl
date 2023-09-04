@@ -1,0 +1,23 @@
+# shellcheck shell=bash disable=SC2034
+paths=(
+  "${HOME}/bin"
+  "${HOME}/.asdf/shims"
+{{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
+  /opt/homebrew/opt/fzf/bin
+  /opt/homebrew/sbin
+  /opt/homebrew/bin
+{{- end }}
+  /usr/local/sbin
+  /usr/sbin
+  /sbin
+  /usr/local/bin
+  /usr/bin
+  /bin
+{{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
+  /System/Cryptexes/App/usr/bin
+  /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
+  /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
+  /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+{{- end }}
+)
+IFS=':' eval 'PATH="${paths[*]}"'
