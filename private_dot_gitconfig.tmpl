@@ -32,3 +32,7 @@
 
 [commit]
   gpgsign = true
+
+{{ if eq .chezmoi.hostname "Q15QL7NV2C" }}
+{{ onepasswordRead "op://Private/Dotfiles/git_config_url" }}
+{{ end }}
