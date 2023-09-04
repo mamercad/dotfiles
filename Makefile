@@ -1,17 +1,17 @@
 .DEFAULT_GOAL := dry
+.PHONY: brew lint init dry apply
 
-.PHONY: brew
 brew:
 	@./brew-dump.sh
 
-.PHONY: lint
 lint:
 	@pre-commit run --all-files --verbose
 
-.PHONY: dry
+init:
+	@chezmoi init
+
 dry:
 	@chezmoi apply --dry-run --verbose
 
-.PHONY: apply
 apply:
 	@chezmoi apply --verbose

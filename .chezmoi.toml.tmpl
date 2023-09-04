@@ -1,4 +1,7 @@
+{{- $name := promptStringOnce . "name" "Full name" -}}
 {{- $email := promptStringOnce . "email" "Email address" -}}
-
+{{- $pubkey := promptStringOnce . "pubkey" "SSH public key" -}}
 [data]
+    name = {{ $name | quote }}
     email = {{ $email | quote }}
+    pubkey = {{ $pubkey | quote }}

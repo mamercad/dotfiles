@@ -11,7 +11,9 @@ brew install chezmoi
 ```
 
 Initialize `chezmoi` with `chezmoi init` \
+If `.chezmoi.toml.tmpl` changes, run `chezmoi init` again \
 Manage a dotfile with `chezmoi add .somedotfile` \
+Manage a dotfile as a template with `chezmoi add --template .somedotfile` \
 Edit a managed dotfile with `chezmoi edit .somedotfile` \
 See what would change with `chezmoi diff` \
 Apply the change with `chezmoi apply -v` \
