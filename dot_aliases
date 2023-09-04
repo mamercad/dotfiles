@@ -1,0 +1,4 @@
+# shellcheck shell=bash
+alias c="clear"
+if command -v chezmoi >/dev/null; then alias cm="chezmoi"; fi
+if command -v exa >/dev/null; then alias ls="exa"; fi

@@ -1,0 +1,14 @@
+# shellcheck shell=bash disable=SC2148,SC1091
+if command -v fzf >/dev/null; then
+  [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
+fi
+if command -v op >/dev/null; then
+  [ -f "$HOME/.config/op/plugins.sh" ] && source "$HOME/.config/op/plugins.sh"
+fi
+if command -v starship >/dev/null; then eval "$(starship init zsh)"; fi
+if command -v asdf >/dev/null; then
+  [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ] && source /opt/homebrew/opt/asdf/libexec/asdf.sh
+fi
+if command -v zoxide >/dev/null; then
+  eval "$(zoxide init zsh)"
+fi
