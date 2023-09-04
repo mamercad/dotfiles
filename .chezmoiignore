@@ -1,4 +1,5 @@
 .pre-commit-config.yaml
+.tool-versions
 brew-dump.sh
 Brewfile
 Brewfile.lock.json
