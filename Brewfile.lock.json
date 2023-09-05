@@ -5,7 +5,7 @@
         "revision": "4d03d87b61bd5202ffb89232592965252a096820"
       },
       "homebrew/cask-fonts": {
-        "revision": "e5160bde64251ccb91e2098d69aae159b1143991"
+        "revision": "76e035a383e1349de84ecdff37e08fef861f1184"
       },
       "homebrew/core": {
         "revision": "82b965859a98763f1b6acd5db50146781ad774b0"
@@ -1273,6 +1273,10 @@
       "Pages": {
         "id": "409201541",
         "version": "12.1"
+      },
+      "Owly": {
+        "id": "882812218",
+        "version": "2.4"
       }
     },
     "vscode": {
@@ -1354,13 +1358,14 @@
       "zhuangtongfa.material-theme": null,
       "ziyasal.vscode-open-in-github": null,
       "zxh404.vscode-proto3": null,
-      "Catppuccin.catppuccin-vsc": null
+      "Catppuccin.catppuccin-vsc": null,
+      "EditorConfig.EditorConfig": null
     }
   },
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.1.7-61-g66eb266",
+        "HOMEBREW_VERSION": "4.1.8-15-g4db9aa0",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.1.0.1.1683849156",

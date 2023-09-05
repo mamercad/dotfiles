@@ -43,6 +43,7 @@ mas "iStat Menus", id: 1319778037
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
+mas "Owly", id: 882812218
 mas "Pages", id: 409201541
 vscode "1Password.op-vscode"
 vscode "aaron-bond.better-comments"
@@ -62,6 +63,7 @@ vscode "donjayamanne.git-extension-pack"
 vscode "donjayamanne.githistory"
 vscode "DotJoshJohnson.xml"
 vscode "eamodio.gitlens"
+vscode "EditorConfig.EditorConfig"
 vscode "Equinusocio.vsc-material-theme"
 vscode "equinusocio.vsc-material-theme-icons"
 vscode "eriklynd.json-tools"
