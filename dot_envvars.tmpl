@@ -11,3 +11,9 @@ fi
 if command -v op >/dev/null; then
   export SSH_AUTH_SOCK="$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 fi
+{{ if eq .chezmoi.hostname "Q15QL7NV2C" }}
+export JIRA_API_TOKEN="{{ onepasswordRead "op://Private/Atlassian/jira-cli-api-token" }}"
+if command -v bat >/dev/null; then export JIRA_PAGER="bat"; fi
+export JIRA_URL="{{ onepasswordRead "op://Private/Atlassian/jira-url" }}"
+export VAULT_ADDR="{{ onepasswordRead "op://Private/Dotfiles/envvar_vault_addr" }}"
+{{ end }}
