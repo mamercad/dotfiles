@@ -1,7 +1,7 @@
-{{- $name := promptStringOnce . "name" "Full name" -}}
-{{- $email := promptStringOnce . "email" "Email address" -}}
-{{- $pubkey := promptStringOnce . "pubkey" "SSH public key" -}}
+{{- $work_name := promptStringOnce . "work_name" "Work full name" -}}
+{{- $work_email := promptStringOnce . "work_email" "Work email address" -}}
+{{- $work_pubkey := promptStringOnce . "work_pubkey" "Work SSH public key" -}}
 [data]
-    name = {{ $name | quote }}
-    email = {{ $email | quote }}
-    pubkey = {{ $pubkey | quote }}
+    work_name = {{ $work_name | quote }}
+    work_email = {{ $work_email | quote }}
+    work_pubkey = {{ $work_pubkey | quote }}

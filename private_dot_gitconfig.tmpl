@@ -1,7 +1,9 @@
 [user]
-  signingkey = {{ .pubkey }}
-  name = {{ .name }}
-  email = {{ .email }}
+{{- if eq .chezmoi.hostname "Q15QL7NV2C" }}
+  signingkey = {{ .work_pubkey }}
+  name = {{ .work_name }}
+  email = {{ .work_email }}
+{{- end }}
 
 [core]
   pager = delta
