@@ -15,5 +15,6 @@ fi
 export JIRA_API_TOKEN="{{ onepasswordRead "op://Private/Atlassian/jira-cli-api-token" }}"
 if command -v bat >/dev/null; then export JIRA_PAGER="bat"; fi
 export JIRA_URL="{{ onepasswordRead "op://Private/Atlassian/jira-url" }}"
+export KUBECONFIG="{{ onepasswordRead "op://Private/Dotfiles/envvar_kubeconfig" }}"
 export VAULT_ADDR="{{ onepasswordRead "op://Private/Dotfiles/envvar_vault_addr" }}"
 {{ end }}
