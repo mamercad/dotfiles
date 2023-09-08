@@ -18,3 +18,4 @@ export JIRA_URL="{{ onepasswordRead "op://Private/Atlassian/jira-url" }}"
 export KUBECONFIG="{{ onepasswordRead "op://Private/Dotfiles/envvar_kubeconfig" }}"
 export VAULT_ADDR="{{ onepasswordRead "op://Private/Dotfiles/envvar_vault_addr" }}"
 {{ end }}
+export XDG_CONFIG_HOME="${HOME}/.config"
