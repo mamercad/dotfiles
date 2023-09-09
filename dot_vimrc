@@ -1,0 +1,9 @@
+set autoindent
+set expandtab
+set nowrap
+set shiftwidth=2
+set softtabstop=2
+set ruler
+set tabstop=2
+filetype plugin indent on
+syntax on

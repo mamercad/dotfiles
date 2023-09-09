@@ -1,0 +1,9 @@
+autodetach on
+defscrollback 50000
+hardstatus off
+hardstatus alwayslastline
+hardstatus string "%{= kw} %H %{= kw} %{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %= %D %M %d %c"
+shell -$SHELL
+startup_message off
+term screen-256color
+bind 'r' source $HOME/.screenrc

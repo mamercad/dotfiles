@@ -5,6 +5,6 @@ if command -v brew >/dev/null; then
   autoload -Uz compinit
   compinit
 fi
-for f in aliases envvars paths sets sources; do
+for f in aliases envvars options paths sets sources; do
   [ -f "${HOME}/.${f}" ] && source "${HOME}/.${f}"
 done
