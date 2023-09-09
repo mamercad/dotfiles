@@ -1,0 +1,12 @@
+personalHosts:
+  - ambrosia
+workHosts:
+  - Q15QL7NV2C
+
+# work_name: {{ $work_name | quote }}
+# work_email: {{ $work_email | quote }}
+# work_pubkey: {{ $work_pubkey | quote }}
+
+# personal_name: {{ $personal_name | quote }}
+# personal_email: {{ $personal_email | quote }}
+# personal_pubkey: {{ $personal_pubkey | quote }}

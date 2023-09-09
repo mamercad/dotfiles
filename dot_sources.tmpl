@@ -13,6 +13,6 @@ fi
 if command -v zoxide >/dev/null; then
   eval "$(zoxide init zsh)"
 fi
-{{ if eq .chezmoi.hostname "Q15QL7NV2C" }}
+{{ if has .chezmoi.hostname .workHosts }}
 {{ onepasswordRead "op://Private/Dotfiles/source_work_thing_1" }}
 {{ end }}

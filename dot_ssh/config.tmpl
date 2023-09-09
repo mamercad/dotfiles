@@ -1,3 +1,7 @@
-{{- if eq .chezmoi.hostname "Q15QL7NV2C" }}
+{{- if has .chezmoi.hostname .workHosts }}
 {{ onepasswordRead "op://Private/Dotfiles/ssh_config" }}
+{{- end }}
+{{- if has .chezmoi.hostname .personalHosts }}
+Host *
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 {{- end }}

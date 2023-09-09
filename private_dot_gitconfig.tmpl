@@ -1,10 +1,10 @@
 [user]
-{{- if eq .chezmoi.hostname "Q15QL7NV2C" }}
+{{- if has .chezmoi.hostname .workHosts }}
   signingkey = {{ .work_pubkey }}
   name = {{ .work_name }}
   email = {{ .work_email }}
 {{- end }}
-{{- if eq .chezmoi.hostname "ambrosia" }}
+{{- if has .chezmoi.hostname .personalHosts }}
   signingkey = {{ .personal_pubkey }}
   name = {{ .personal_name }}
   email = {{ .personal_email }}
@@ -40,6 +40,6 @@
 [commit]
   gpgsign = true
 
-{{ if eq .chezmoi.hostname "Q15QL7NV2C" }}
+{{ if has .chezmoi.hostname .workHosts }}
 {{ onepasswordRead "op://Private/Dotfiles/git_config_url" }}
 {{ end }}
