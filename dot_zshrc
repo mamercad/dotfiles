@@ -1,3 +1,4 @@
+# code: language=bash
 # shellcheck shell=bash disable=SC2148,SC1091,SC1090
 if command -v brew >/dev/null; then
   FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"

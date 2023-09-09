@@ -1,3 +1,4 @@
+# code: language=bash
 # shellcheck shell=bash
 alias c="clear"
 if command -v ag >/dev/null; then alias ag='\ag --pager="less -FRX"'; fi

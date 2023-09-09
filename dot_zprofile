@@ -1,2 +1,3 @@
+# code: language=bash
 # shellcheck shell=bash disable=SC2148
 [ -x /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"

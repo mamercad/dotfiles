@@ -1,3 +1,4 @@
+# code: language=bash
 # shellcheck shell=bash
 set -o vi
 setopt share_history
