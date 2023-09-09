@@ -4,6 +4,11 @@
   name = {{ .work_name }}
   email = {{ .work_email }}
 {{- end }}
+{{- if eq .chezmoi.hostname "ambrosia" }}
+  signingkey = {{ .personal_pubkey }}
+  name = {{ .personal_name }}
+  email = {{ .personal_email }}
+{{- end }}
 
 [core]
   pager = delta
