@@ -1,7 +1,13 @@
 {{- $work_name := promptStringOnce . "work_name" "Work full name" -}}
 {{- $work_email := promptStringOnce . "work_email" "Work email address" -}}
 {{- $work_pubkey := promptStringOnce . "work_pubkey" "Work SSH public key" -}}
+{{- $personal_name := promptStringOnce . "personal_name" "Pesonal full name" -}}
+{{- $personal_email := promptStringOnce . "personal_email" "Personal email address" -}}
+{{- $personal_pubkey := promptStringOnce . "personal_pubkey" "Personal SSH public key" -}}
 [data]
     work_name = {{ $work_name | quote }}
     work_email = {{ $work_email | quote }}
     work_pubkey = {{ $work_pubkey | quote }}
+    personal_name = {{ $personal_name | quote }}
+    personal_email = {{ $personal_email | quote }}
+    personal_pubkey = {{ $personal_pubkey | quote }}
