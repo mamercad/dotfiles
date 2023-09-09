@@ -1,22 +1,18 @@
-# code: language=bash
+# code: language=shell
 # shellcheck shell=bash disable=SC2148
-if command -v bat >/dev/null; then
-  export PAGER="bat"
-fi
-if command -v fzf >/dev/null; then
-  export FZF_DEFAULT_OPTS="--border --height 50% --layout=reverse"
-fi
-if command -v nvim >/dev/null; then
-  export EDITOR="nvim"
-fi
-if command -v op >/dev/null; then
-  export SSH_AUTH_SOCK="$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
-fi
-{{ if has .chezmoi.hostname .workHosts }}
+if command -v bat >/dev/null; then; export PAGER="bat"; fi
+if command -v fzf >/dev/null; then; export FZF_DEFAULT_OPTS="--border --height 50% --layout=reverse"; fi
+if command -v nvim >/dev/null; then export EDITOR="nvim"; fi
+if command -v op >/dev/null; then; export SSH_AUTH_SOCK="$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"; fi
+{{- if has .chezmoi.hostname .workHosts }}
 export JIRA_API_TOKEN="{{ onepasswordRead "op://Private/Atlassian/jira-cli-api-token" }}"
 if command -v bat >/dev/null; then export JIRA_PAGER="bat"; fi
 export JIRA_URL="{{ onepasswordRead "op://Private/Atlassian/jira-url" }}"
 export KUBECONFIG="{{ onepasswordRead "op://Private/Dotfiles/envvar_kubeconfig" }}"
 export VAULT_ADDR="{{ onepasswordRead "op://Private/Dotfiles/envvar_vault_addr" }}"
-{{ end }}
+{{- end }}
 export XDG_CONFIG_HOME="${HOME}/.config"
+{{- if has .chezmoi.hostname .personalHosts }}
+export DIGITALOCEAN_ACCESS_TOKEN="{{ onepasswordRead "op://DigitalOcean/Cloud-FOSS-ansible/token" }}"
+export DIGITALOCEAN_TOKEN="{{ onepasswordRead "op://DigitalOcean/Cloud-FOSS-ansible/token" }}"
+{{- end }}
