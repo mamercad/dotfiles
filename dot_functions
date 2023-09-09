@@ -1,0 +1,24 @@
+# code: language=shell
+# shellcheck shell=bash disable=SC2148,SC2211
+
+function hello() {
+  echo hello
+}
+
+function winfo() {
+  ssid="$(/Sy*/L*/Priv*/Apple8*/V*/C*/R*/airport -I | awk '/ SSID:/' | sed 's/.*SSID: //')"
+  ip="$(curl -s ifconfig.co/json | jq -r .ip)"
+  hn="$(curl -s ifconfig.co/json | jq -r .hostname)"
+  asn="$(curl -s ifconfig.co/json | jq -r .asn)"
+  asn_org="$(curl -s ifconfig.co/json | jq -r .asn_org)"
+  echo "Connected to ${ssid}, IP is ${ip} (${hn}), using ASN ${asn} (${asn_org})"
+  echo
+  echo "Talking to Google looks like this:"
+  sudo mtr -n -r -c1 google.com
+  echo
+  speedtest-cli
+}
+
+function yamlsort() {
+  yq e '(... | select(type == "!!seq")) |= sort | to_entries | sort_by(.key) | from_entries' "$@"
+}
