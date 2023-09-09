@@ -6,3 +6,6 @@ Brewfile.lock.json
 Makefile
 UNLICENSE
 README.md
+{{ if eq .chezmoi.os "darwin" }}
+~/Library
+{{- end }}
