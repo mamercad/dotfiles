@@ -1,11 +1,7 @@
 # code: language=shell
 # shellcheck shell=bash disable=SC2148,SC2211
 
-function hello() {
-  echo hello
-}
-
-function winfo() {
+function winfo {
   ssid="$(/Sy*/L*/Priv*/Apple8*/V*/C*/R*/airport -I | awk '/ SSID:/' | sed 's/.*SSID: //')"
   ip="$(curl -s ifconfig.co/json | jq -r .ip)"
   hn="$(curl -s ifconfig.co/json | jq -r .hostname)"
@@ -19,6 +15,35 @@ function winfo() {
   speedtest-cli
 }
 
-function yamlsort() {
-  yq e '(... | select(type == "!!seq")) |= sort | to_entries | sort_by(.key) | from_entries' "$@"
+function yamlsort {
+  function usage {
+    echo "Usage: $0 [-i in place] <file>"
+    return 0
+  }
+
+  if [[ $# -eq 0 ]]; then
+    usage
+  fi
+
+  if [[ $# -eq 1 ]]; then
+    if ! test -f "$1"; then
+      usage
+      echo "File $1 not found"
+      return 1
+    fi
+    yq eval '(... | select(type == "!!seq")) |= sort | to_entries | sort_by(.key) | from_entries' "$1"
+  fi
+
+  if [[ $# -eq 2 ]]; then
+    if [[ $1 == "-i" ]]; then
+      if ! test -f "$2"; then
+        usage
+        echo "File $2 not found"
+        return 1
+      fi
+      yq eval '(... | select(type == "!!seq")) |= sort | to_entries | sort_by(.key) | from_entries' --inplace "$2"
+    else
+      usage
+    fi
+  fi
 }
