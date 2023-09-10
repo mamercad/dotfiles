@@ -262,11 +262,11 @@ compute:
   ssh:
     ssh-agent-forwarding: false
     ssh-command: ""
-    ssh-key-path: /Users/mark/.ssh/id_rsa
+    ssh-key-path: {{ .chezmoi.homeDir }}/.ssh/id_rsa
     ssh-port: 22
     ssh-private-ip: false
     ssh-user: root
-config: /Users/mark/Library/Application Support/doctl/config.yaml
+config: {{ .chezmoi.homeDir }}/Library/Application Support/doctl/config.yaml
 context: default
 databases:
   backups:
