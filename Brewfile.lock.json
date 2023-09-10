@@ -5,10 +5,10 @@
         "revision": "f3389cc6ab60a49ae01dfdd343beb937b1f48c55"
       },
       "homebrew/cask-fonts": {
-        "revision": "c6a246082d051ca68682f0ecbd1fd0d72e64d57f"
+        "revision": "ab2fdc9e0b8827ba107015f91b8f036fa75c017e"
       },
       "homebrew/core": {
-        "revision": "63b16a87ec47595b83f0a0b6c02235f2cd2caed2"
+        "revision": "82b965859a98763f1b6acd5db50146781ad774b0"
       },
       "homeport/tap": {
         "revision": "37da5a6439c1eb227bad0fbf01f6b595526e666e"
@@ -26,7 +26,7 @@
         "revision": "28c26d8270bff84a37c15c493e776139abe1c1a8"
       },
       "homebrew/cask": {
-        "revision": "0879fc9ae2c11049434aef2e9b669ce80988a6d4"
+        "revision": "fd12be4a7737a16d0c35f9810631d191990acffa"
       },
       "mamercad/st2client": {
         "revision": "ef75a32961ce64c42c42948818348ddb55a1af08"
@@ -494,45 +494,45 @@
         }
       },
       "neovim": {
-        "version": "0.9.1",
+        "version": "0.9.2",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_ventura": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:ca207194a6ed07851c3a36293e32c37e879365f2ad2731f450455da1bec9d7a4",
-              "sha256": "ca207194a6ed07851c3a36293e32c37e879365f2ad2731f450455da1bec9d7a4"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:ed82c990549171cc7fc57adc63a497bd0695f49ee5873862bb2fa09812d3471c",
+              "sha256": "ed82c990549171cc7fc57adc63a497bd0695f49ee5873862bb2fa09812d3471c"
             },
             "arm64_monterey": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:85795a3a28506df3c7d281d9f9fe1d1f2d50c3834e7287bb17d86d80cbe67f3d",
-              "sha256": "85795a3a28506df3c7d281d9f9fe1d1f2d50c3834e7287bb17d86d80cbe67f3d"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:03599c7880db8ef50818df21b76fb520f8b5259dd8fee2f6fd9f670abd3c19ef",
+              "sha256": "03599c7880db8ef50818df21b76fb520f8b5259dd8fee2f6fd9f670abd3c19ef"
             },
             "arm64_big_sur": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:ec4415c980e03abb98631cf6d701bf02eb31430b696de11915900ab2daebb9e0",
-              "sha256": "ec4415c980e03abb98631cf6d701bf02eb31430b696de11915900ab2daebb9e0"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:443e25018cb6da8aadf9a98a79a5ab1e873fcc7b7842301aeef3c3ca9c638cfd",
+              "sha256": "443e25018cb6da8aadf9a98a79a5ab1e873fcc7b7842301aeef3c3ca9c638cfd"
             },
             "ventura": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:70888c68b7413575337a00a044b17a1a06e8948b6b3fa3317a99f66ea6f03f58",
-              "sha256": "70888c68b7413575337a00a044b17a1a06e8948b6b3fa3317a99f66ea6f03f58"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:e5794d9525acc5e127b2b43e3b5a687dcb37434f16311a2f691310c5b26751a2",
+              "sha256": "e5794d9525acc5e127b2b43e3b5a687dcb37434f16311a2f691310c5b26751a2"
             },
             "monterey": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:3993bd104e748db9b4f1b2994082d570ebb84ff4facaaeb66ce9d20647613a09",
-              "sha256": "3993bd104e748db9b4f1b2994082d570ebb84ff4facaaeb66ce9d20647613a09"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:f3086448bcde12c4679ec8ceb3ade1d85a510816d425ba42c9efa42ad76b80b5",
+              "sha256": "f3086448bcde12c4679ec8ceb3ade1d85a510816d425ba42c9efa42ad76b80b5"
             },
             "big_sur": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:fe91386e1a0e9cddb90b13b3998f8f1e293d74f1a4a411b7b6e122771ae3ade7",
-              "sha256": "fe91386e1a0e9cddb90b13b3998f8f1e293d74f1a4a411b7b6e122771ae3ade7"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:de7e8957ecae7b11f927fc5d6136e9e3fe314b8c7e56e850dd5ce6820796f36a",
+              "sha256": "de7e8957ecae7b11f927fc5d6136e9e3fe314b8c7e56e850dd5ce6820796f36a"
             },
             "x86_64_linux": {
               "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:17a892c8ecfd1206aa894663b6d68a7dea4767b4b323afd76263e9aafe3fa673",
-              "sha256": "17a892c8ecfd1206aa894663b6d68a7dea4767b4b323afd76263e9aafe3fa673"
+              "url": "https://ghcr.io/v2/homebrew/core/neovim/blobs/sha256:4e558bb3bd69d373adfdb43c842fd48f7d7efc83fea99cc9b77bef6dfa34371f",
+              "sha256": "4e558bb3bd69d373adfdb43c842fd48f7d7efc83fea99cc9b77bef6dfa34371f"
             }
           }
         }
@@ -2155,11 +2155,11 @@
     "mas": {
       "GarageBand": {
         "id": "682658836",
-        "version": "10.4.8"
+        "version": "10.4.6"
       },
       "iMovie": {
         "id": "408981434",
-        "version": "10.3.8"
+        "version": "10.3.4"
       },
       "iStat Menus": {
         "id": "1319778037",
@@ -2167,7 +2167,7 @@
       },
       "Keynote": {
         "id": "409183694",
-        "version": "13.1"
+        "version": "12.1"
       },
       "Magnet": {
         "id": "441258766",
@@ -2175,11 +2175,11 @@
       },
       "Numbers": {
         "id": "409203825",
-        "version": "13.1"
+        "version": "12.1"
       },
       "Pages": {
         "id": "409201541",
-        "version": "13.1"
+        "version": "12.1"
       },
       "Owly": {
         "id": "882812218",
@@ -2187,7 +2187,7 @@
       },
       "1Password for Safari": {
         "id": "1569813296",
-        "version": "2.13.0"
+        "version": "2.14.1"
       },
       "ColorSlurp": {
         "id": "1287239339",
@@ -2199,11 +2199,11 @@
       },
       "Microsoft Remote Desktop": {
         "id": "1295203466",
-        "version": "10.8.4"
+        "version": "10.9.1"
       },
       "Tailscale": {
         "id": "1475387142",
-        "version": "1.46.1"
+        "version": "1.48.1"
       },
       "WireGuard": {
         "id": "1451685025",
@@ -2297,12 +2297,12 @@
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.1.10",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_VERSION": "4.1.10-11-g502434c",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.1.0.1.1683849156",
         "Xcode": "14.3",
-        "macOS": "13.5"
+        "macOS": "13.5.1"
       }
     }
   }
