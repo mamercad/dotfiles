@@ -10,9 +10,13 @@ if command -v bat >/dev/null; then export JIRA_PAGER="bat"; fi
 export JIRA_URL="{{ onepasswordRead "op://Private/Atlassian/jira-url" }}"
 export KUBECONFIG="{{ onepasswordRead "op://Private/Dotfiles/envvar_kubeconfig" }}"
 export VAULT_ADDR="{{ onepasswordRead "op://Private/Dotfiles/envvar_vault_addr" }}"
+export VAULT_CACERT="{{ onepasswordRead "op://Private/Dotfiles/envvar_vault_ca_cert" }}"
 {{- end }}
 export XDG_CONFIG_HOME="${HOME}/.config"
 {{- if has .chezmoi.hostname .personalHosts }}
 export DIGITALOCEAN_ACCESS_TOKEN="{{ onepasswordRead "op://DigitalOcean/Cloud-FOSS-ansible/token" }}"
 export DIGITALOCEAN_TOKEN="{{ onepasswordRead "op://DigitalOcean/Cloud-FOSS-ansible/token" }}"
+{{- end }}
+{{- if eq .chezmoi.os "darwin" }}
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY="YES"
 {{- end }}
