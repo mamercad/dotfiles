@@ -1,0 +1,4 @@
+bind -x '"\C-l":clear'
+for f in aliases envvars functions options paths sets sources; do
+  [ -f "${HOME}/.${f}" ] && source "${HOME}/.${f}"
+done

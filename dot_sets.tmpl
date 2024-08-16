@@ -1,4 +1,6 @@
 # code: language=bash
 # shellcheck shell=bash
 set -o vi
+{{- if eq .chezmoi.os "darwin" -}}
 setopt share_history
+{{- end -}}
