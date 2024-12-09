@@ -1,5 +1,5 @@
 set -o vi
-{{- if eq .chezmoi.os "darwin" -}}
+{{ if eq .chezmoi.os "darwin" -}}
 bindkey -v
 bindkey -M vicmd v edit-command-line
-{{- end -}}
+{{ end -}}
