@@ -7,9 +7,7 @@ if command -v op >/dev/null; then
   [ -f "$HOME/.config/op/plugins.sh" ] && source "$HOME/.config/op/plugins.sh"
 fi
 if command -v starship >/dev/null; then eval "$(starship init zsh)"; fi
-if command -v asdf >/dev/null; then
-  [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ] && source /opt/homebrew/opt/asdf/libexec/asdf.sh
-fi
+[ -f "$HOME/.asdf/asdf.sh" ] && source "$HOME/.asdf/asdf.sh"
 if command -v zoxide >/dev/null; then
   eval "$(zoxide init zsh)"
 fi

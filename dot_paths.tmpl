@@ -1,9 +1,11 @@
 # code: language=bash
 # shellcheck shell=bash disable=SC2034
 paths=(
+  "${HOME}/.local/bin"
   "${HOME}/bin"
   "${HOME}/.asdf/shims"
 {{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
+  /Library/TeX/texbin
   /opt/homebrew/opt/fzf/bin
   /opt/homebrew/sbin
   /opt/homebrew/bin
