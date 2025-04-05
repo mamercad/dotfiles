@@ -1,0 +1,3 @@
+{{- if (and (eq .chezmoi.os "linux") (eq .chezmoi.osRelease.ubuntuCodename "jammy")) -}}
+{{-   include ".bash_profile_jammy" -}}
+{{- end -}}

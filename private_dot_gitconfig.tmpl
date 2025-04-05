@@ -37,8 +37,10 @@
   program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 {{ end }}
 
+{{- if eq .chezmoi.os "darwin" -}}
 [commit]
   gpgsign = true
+{{- end -}}
 
 {{ if has .chezmoi.hostname .workHosts }}
 {{ onepasswordRead "op://Private/Dotfiles/git_config_url" }}
