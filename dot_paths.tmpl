@@ -4,8 +4,10 @@ paths=(
   "${HOME}/.local/bin"
   "${HOME}/bin"
   "${HOME}/.asdf/shims"
-{{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
+{{- if eq .chezmoi.os "darwin" }}
   /Library/TeX/texbin
+{{- end }}
+{{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
   /opt/homebrew/opt/fzf/bin
   /opt/homebrew/sbin
   /opt/homebrew/bin

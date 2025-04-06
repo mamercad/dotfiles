@@ -31,6 +31,7 @@ brew "go"
 brew "helm"
 brew "htop"
 brew "jq"
+brew "just"
 brew "k9s"
 brew "lastpass-cli"
 brew "lua-language-server"
@@ -91,12 +92,15 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "iStat Menus", id: 1319778037
 mas "Keynote", id: 409183694
+mas "Loud Typer", id: 1493508558
 mas "Magic", id: 1581223559
 mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 1295203466
+mas "MirrorMeister", id: 1474077410
+mas "MonitorControlLite", id: 1595464182
 mas "Numbers", id: 409203825
 mas "Owly", id: 882812218
 mas "Pages", id: 409201541
+mas "Perplexity", id: 6714467650
 mas "QR Journal", id: 483820530
 mas "Tailscale", id: 1475387142
 mas "Windows App", id: 1295203466

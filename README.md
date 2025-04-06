@@ -20,6 +20,8 @@ Apply the change with `chezmoi apply -v` \
 Apply the change (dry-run) with `chezmoi apply -n -v` \
 Commit the change with `chezmoi cd && git add . && git commit -m "Something" && git push`
 
+> There's a [`Justfile`](./Justfile) that does typical things
+
 ## Packages
 
 For the most part, I use [Homebrew](https://brew.sh/)
