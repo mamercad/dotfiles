@@ -13,4 +13,5 @@ dry:
   chezmoi apply --dry-run --verbose
 
 apply:
+  brew bundle install --file=Brewfile
   chezmoi apply --verbose

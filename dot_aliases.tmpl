@@ -5,7 +5,17 @@ if command -v ag >/dev/null; then alias ag='\ag --pager="less -FRX"'; fi
 if command -v chezmoi >/dev/null; then alias cm="chezmoi"; fi
 if command -v nvim >/dev/null; then alias nv="nvim"; fi
 {{- if eq .chezmoi.os "darwin" }}
-if test -f "/Applications/Tailscale.app/Contents/MacOS/Tailscale"; then
+if [ ! test -f "/usr/local/bin/tailscale" && test -f "/Applications/Tailscale.app/Contents/MacOS/Tailscale" ]# code: language=bash
+# shellcheck shell=bash
+alias c="clear"
+if command -v ag >/dev/null; then alias ag='\ag --pager="less -FRX"'; fi
+if command -v chezmoi >/dev/null; then alias cm="chezmoi"; fi
+if command -v nvim >/dev/null; then alias nv="nvim"; fi
+{{- if eq .chezmoi.os "darwin" }}
+if [ ! -f "/usr/local/bin/tailscale" ] && [ -f "/Applications/Tailscale.app/Contents/MacOS/Tailscale" ]; then
+  alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+fi
+{{- end }}; then
   alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 fi
 {{- end }}
