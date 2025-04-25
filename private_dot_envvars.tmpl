@@ -1,7 +1,7 @@
 # code: language=shell
 # shellcheck shell=bash disable=SC2148
 if command -v fzf >/dev/null; then; export FZF_DEFAULT_OPTS="--border --height 50% --layout=reverse"; fi
-if command -v nvim >/dev/null; then export EDITOR="nvim"; fi
+# if command -v nvim >/dev/null; then export EDITOR="nvim"; fi
 if command -v op >/dev/null; then; export SSH_AUTH_SOCK="$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"; fi
 {{- if has .chezmoi.hostname .workHosts }}
 export GHE_TOKEN="{{ onepasswordRead "op://Private/Dotfiles/envvar_ghe_token" }}"
